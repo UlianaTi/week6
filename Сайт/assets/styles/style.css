@@ -1,0 +1,185 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    
+}
+
+.logo {
+    height: 72px;
+    width: 145px;
+    padding: 5%;
+}
+
+.nav_box {
+    justify-self: start;
+
+    display: grid;
+    justify-items: stretch;
+    column-gap: 50px;
+}
+
+#city {
+    border: none;
+}
+
+#search {
+    height:40px;
+    width: 40px;
+    color: #DADADA;
+}
+
+.header_btn {
+    background-color: #fff;
+    border: 2px solid #DADADA;
+    height: 47px;
+    width: 203px;
+}
+
+.header_btn:hover {
+    border: 5px solid #DADADA;
+}
+
+.screen-1 {
+    height: 20vh;
+    width: 100%;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.bg_screen-1 {
+    background-repeat: no-repeat;
+    background-image: url(../images/screen_1.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    height: 70vh;
+    width: 100vw;
+}
+
+.screen-1 h2 {
+    font-size: 24px;
+    font-weight: 100;
+    color: #fff;
+
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+.screen-1 h1 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #fff;
+    
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.products {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+.product_item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+}
+
+.screen-2 {
+    height: 100vh;
+    position: relative;
+}
+
+.bg_screen-2 {
+    background-image: url(../images/screen_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.screen-2 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 400;
+}
+ /* не понятно как надо правильно спозиционировать текст относительно самого низа картинки background??? */
+.screen-2 h3 {
+    position: absolute;
+    top: 30%;
+    font-size: 680px;
+    color: #fff;
+    font-weight: 400;
+    top: -10%;
+}
+
+.results {
+    width: 100%;
+    max-width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.results h4 {
+    font-size: 48px;
+}
+.results p {
+    font-size: 18px;
+}
+
+.bg_screen-3 {
+    background-image: url(../images/screen_3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.screen-3 {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+}
